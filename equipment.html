@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oculus</title>
+    <link rel="stylesheet" href="equipment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+        <div class="navbar">
+           <div class="logo"><img src="logo.png" alt=""></div>
+           
+           <div class="dropdown_menu">
+            <li class="acceptance"><a href="acceptance_form.html">Equipment Acceptance Form</a></li>
+            <li class="inspection"><a href="inspection_form.html">Equipment Inspection Chicklist</a></li>
+            <li class="replacement"><a href="replacement_form.html">Replacement Score Form</a></li>
+            <li class="preventive"><a href="#">Preventive Maintenance Steps</a></li>
+            <li class="inventory"><a href="icu.html">Inventory</a></li>
+
+        </div>
+                    <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+         </div>
+     
+         
+      <!-- js dropdown_menu -->
+  <script>
+    const toggleBtn = document.querySelector(' .toggle_btn')
+    const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+    const dropDownMenu = document.querySelector(' .dropdown_menu')
+  
+   toggleBtn.onclick = function() {
+       dropDownMenu.classList.toggle('open')
+       const isOpen = dropDownMenu.classList.contains('open')
+
+       toggleBtnIcon.classList = isOpen
+       ? 'fa-solid fa-xmark'
+       : 'fa-solid fa-bars'
+   }
+
+</script>
+
+<div class="form-container">
+    <form action="">
+        <h3>Equipment Information</h3>
+        <label for="">Device Name:</label>
+        <input type="text" placeholder="Device Name" required>
+
+        <label for="">DEPT Name:</label>
+        <input type="text" placeholder="Department name"required>
+
+        <label for="">Company Name:</label>
+        <input type="text" placeholder="Company Name" required>
+
+        <label for="">Model:</label>
+        <input type="text" placeholder="Model" required>
+
+        <label for="">Manufacture:</label>
+        <input type="text" placeholder="Manufacture" required>
+
+        <label for="">Manufacture Date:</label>
+        <input type="text" placeholder="Manufacture date" required>
+
+        <label for="">Operating State:</label>
+        <input type="text" placeholder="Operating state" required>
+
+        <label for="">Operating Service:</label>
+        <input type="text" placeholder="Operating service" required>
+
+        <label for="">Date Inventory Update:</label>
+        <input type="text" placeholder="Date inventory update" required>
+
+        <label for="">Maintenance Service Provider:</label>
+        <input type="text" placeholder="Maintenance service provider" required>
+
+        <label for="">Purchase Supplier:</label>
+        <input type="text" placeholder="Purchase supplier" required>
+
+        <label for="">Purchase Cost:</label>
+        <input type="text" placeholder="Purchase cost" required>
+
+        <label for="">Warranty Expiration Date:</label>
+        <input type="text" placeholder="Warranty expiration date" required>
+
+        <label for="">Risk Assessment:</label>
+        <input class="action" type="text" placeholder="Risk assessment" required>
+
+        <label for="">Operating History:</label>
+        <input  type="text" placeholder="Operating history" required>
+
+        <label for="">History Of Recalls:</label>
+        <input type="text" placeholder="History of recalls" required>
+
+
+        <button class="btn"> <a class="submit" href="icu.html">Done</a></button>
+    </form>
+
+
+    
+</body>
+</html>
